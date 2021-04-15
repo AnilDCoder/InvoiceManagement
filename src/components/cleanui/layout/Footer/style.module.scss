@@ -1,0 +1,67 @@
+@import 'components/mixins.scss';
+
+.footer {
+  margin: 0 auto;
+  padding: 0 rem(30) rem(30);
+  bottom: 0;
+  position: fixed;
+  left: 50%;
+
+  @media (max-width: $sm-max-width) {
+    padding: 0 rem(16) !important;
+  }
+}
+
+.footerInner {
+  border-top: 1px solid $border;
+  padding-top: rem(30);
+}
+
+.logo {
+  // color: $black;
+  // font-size: rem(17);
+  // text-transform: uppercase;
+  // letter-spacing: -1px;
+  // font-weight: 900;
+  background: linear-gradient(to right, #484299, #a11f68, #eb3b2e, #f38125);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: rem(20);
+  font-weight: 700;
+  // color: $black;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: max-content;
+  display: block;
+
+  span {
+    display: inline-block;
+    height: rem(13);
+    width: rem(13);
+    background: $black;
+    border-radius: 20px;
+    margin-left: rem(8);
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+}
+
+// dark theme
+[data-kit-theme='dark'] {
+  .footer {
+    color: $dark-gray-1;
+  }
+
+  .footerInner {
+    border-top: 1px solid $dark-gray-4;
+  }
+
+  .logo {
+    span {
+      background: $dark-gray-1;
+    }
+  }
+}

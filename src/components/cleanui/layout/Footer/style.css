@@ -1,0 +1,133 @@
+.dock-container {
+  position: relative;
+}
+.dock {
+  width: 100%;
+  position: relative;
+  bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  padding: 5px;
+  background: #fff;
+  border-radius: 16px;
+  height: 80px;
+  align-items: flex-end;
+  /* margin: 0 10%; */
+  min-width: 30%;
+  box-shadow: 4px 6px 20px #00000029;
+}
+
+.icons .ant-badge-status-processing {
+  position: relative;
+  background-color: #4b7cf3;
+  margin: auto;
+  display: block;
+  top: 5px;
+}
+
+img {
+  cursor: pointer;
+}
+.icons div {
+  padding: 5px;
+  height: auto;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  /* height: 100%; */
+  min-width: 70px;
+  transition: all 0.2s ease-in-out;
+}
+.icons div:hover {
+  background: #f2f4f8;
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+.divider {
+  margin: 0 auto;
+  height: 2px;
+  border-radius: 4px;
+  border: none;
+  background: #e6e6e6;
+  width: 85%;
+}
+
+.icons .ant-badge {
+  height: 0;
+}
+.icon {
+  padding: 5px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dock-menu-background {
+  background: #fff !important;
+  border-radius: 12px !important;
+  padding: 4px 0 0 0 !important;
+  min-width: 200px;
+  /* height: 350px; */
+  overflow-x: hidden;
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+  /* box-shadow: none !important; */
+}
+
+.dock-menu-background-item {
+  padding: 8px !important;
+  /* border-bottom: 1px solid #d4d4d4; */
+}
+
+.dock-menu-background-link {
+  text-align: center;
+}
+
+.dock-submenu-label {
+  color: #000000a6;
+  font-weight: 600;
+  text-rendering: optimizeSpeed;
+}
+
+.dock-menu-background-item:hover {
+  background: #e4e9f0 !important;
+}
+
+[data-kit-theme='default'] .ant-dropdown-placement-topCenter > .ant-dropdown-arrow,
+[data-kit-theme='default'] .ant-dropdown-placement-topLeft > .ant-dropdown-arrow,
+[data-kit-theme='default'] .ant-dropdown-placement-topRight > .ant-dropdown-arrow {
+  /* border-right-color: #4B7CF3 !important;
+  border-bottom-color: #4B7CF3 !important; */
+}
+
+.vert-divider {
+  padding: 1px !important;
+  height: 80% !important;
+  width: 1px;
+  min-width: 1px !important;
+  margin: auto !important;
+  border-radius: 4px;
+  background: #200e3217;
+}
+
+.dock-submenu {
+  clear: both;
+  margin: 0;
+  padding: 5px 12px;
+  color: #595c97;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dock-menu-background .ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  padding: 8px !important;
+}
